@@ -612,4 +612,75 @@ figure > img {
   resize: vertical;
 }
 
+.one-health-application {
+  position: relative;
+}
+
+.one-health-application-links {
+  width: 38%;
+  position: absolute;
+  top: 27.97%;
+  left: 40.55%;
+}
+.one-health-application-links > h3 {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.app-links {
+  display: flex;
+}
+.app-links__item {
+  margin-right: 10px;
+  flex-basis: 29.21%;
+}
+.app-links__item:first-child .store-icon::before {
+  content: "\f3ab";
+}
+.app-links__item:first-child .app-message {
+  text-transform: uppercase;
+}
+.app-links__item:last-child {
+  margin-right: 0;
+}
+.app-links__item:last-child .store-icon::before {
+  content: "\f179";
+}
+.app-links__link {
+  padding: 6px 10px;
+  border: 1px solid #dbdfdd;
+  border-radius: 3px;
+  display: flex;
+  background: #000;
+  gap: 7px;
+  align-items: center;
+  transition: background 1s ease-in-out;
+}
+.app-links__link:hover {
+  background: #f73c85;
+}
+.app-links__link .store-icon {
+  color: #fff;
+  font-size: 0;
+}
+.app-links__link .store-icon::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-size: 30px;
+}
+.app-links__link .app-message {
+  margin-bottom: 5px;
+  display: block;
+  color: #f5f9f6;
+  font-size: 10px;
+}
+.app-links__link .os-name {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
 /*# sourceMappingURL=styles.css.map */

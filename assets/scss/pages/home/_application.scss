@@ -1,0 +1,67 @@
+.one-health-application {
+    position: relative;
+}
+
+.one-health-application-links {
+    width: 38%;
+    position: absolute;
+    top: 27.97%;
+    left: 40.55%;
+    > h3 {
+        margin-bottom: 10px;
+        color: returnMap($colors, white-color);
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
+
+.app-links {
+    display: flex;
+    &__item {
+        margin-right: 10px;
+        flex-basis: 29.21%;
+        &:first-child { 
+            .store-icon::before {
+                content: "\f3ab";
+            }
+            .app-message { text-transform: uppercase; }
+        }
+        &:last-child {
+            margin-right: 0;
+            .store-icon::before {
+                content: "\f179";
+            }
+        }
+    }
+    &__link {
+        padding: 6px 10px;
+        border: 1px solid returnMap($colors, light-gray-border-color);
+        border-radius: 3px;
+        display: flex;
+        background: #000;
+        gap: 7px;
+        align-items: center;
+        transition: background 1s ease-in-out;
+        &:hover { background: returnMap($colors, pink-color); }
+        .store-icon {
+            color: returnMap($colors, white-color);
+            font-size: 0;
+            &::before {
+                @include fontAwesome(brands);
+                font-size: 30px;
+            }
+        }
+        .app-message {
+            margin-bottom: 5px;
+            display: block;
+            color: returnMap($colors, light-gray-background);
+            font-size: 10px;
+        }
+        .os-name {
+            display: block;
+            color: returnMap($colors, white-color);
+            font-size: 18px;
+            text-transform: capitalize;
+        }
+    }
+}
