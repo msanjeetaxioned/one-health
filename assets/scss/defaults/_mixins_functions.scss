@@ -1,0 +1,34 @@
+// Returns given Object key's value.
+///
+/// @param {string} $mapName
+///   The Object Name.
+/// @param {string} $keyName
+///   The 'key' of the Object.
+/// @return {string} 'value' of the 'key' of the 'Object'.
+@function returnMap($mapName, $keyName) {
+    @return map-get($map: $mapName, $key: $keyName);
+}
+
+@mixin mediaQuery($value) {
+    @if $value == "tablet" {
+        @media (max-width: 1023px) {
+            @content;
+        }
+    }
+    @else if $value == "mobile" {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+}
+
+@mixin fontAwesome($para) {
+    @if $para == "solid" {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    }
+    @else if $para == "brands" {
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 400;
+    }
+}

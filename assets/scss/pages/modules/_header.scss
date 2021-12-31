@@ -1,0 +1,66 @@
+.header-contact-links { 
+    border-bottom: 1px solid returnMap($colors, light-gray-border-color);
+    > .wrapper {
+        padding: 6px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.header-contact-us-info {
+    display: flex;
+    flex: 1;
+    &__item {
+        color: returnMap($colors, gray-color);
+        &::after {
+            content: "|";
+            margin: 0 10px;
+        }
+        &:last-child::after {
+            content: unset;
+            margin: unset;
+        }
+        &:first-child {
+            > a::before { content: "\f879"; }
+        }
+        &:last-child {
+            > a::before { content: "\f0e0"; }
+        }
+    }
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        color: returnMap($colors, gray-color);
+        font-size: 12px;
+        transition: color 1s ease-in-out;
+        &:hover { color: returnMap($colors, green-color); }
+        &::before {
+            @include fontAwesome(solid);
+            margin-right: 5px;
+            color: returnMap($colors, green-color);
+            font-size: 12px;
+        }
+    }
+}
+
+.header-social-icons {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    column-gap: 4.38%;
+    &__link {
+        color: returnMap($colors, darker-gray-color);
+        font-size: 0;
+        transition: color 1s ease-in-out;
+        &:hover { color: returnMap($colors, green-color); }
+        &::before {
+            @include fontAwesome(brands);
+            font-size: 12px;
+        }
+        &[title="Facebook"]::before { content: "\f39e"; }
+        &[title="Twitter"]::before { content: "\f099"; }
+        &[title="Dribbble"]::before { content: "\f17d"; }
+        &[title="Instagram"]::before { content: "\f16d"; }
+    }
+}

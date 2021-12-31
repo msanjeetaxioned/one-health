@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+body { font-family: $fontFamily; }
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+figure {
+    > img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: contain;
+    }
+}
+
+.wrapper {
+    max-width: 1153px;
+    width: 60.04%;
+    margin: 0 auto;
+}
+
+.form-wrapper {
+    max-width: 727px;
+    width: 37.86%;
+    margin: 0 auto;
+}
