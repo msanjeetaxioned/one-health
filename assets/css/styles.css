@@ -89,7 +89,7 @@ figure > img {
   margin: 0 auto;
 }
 
-.latest-news-button-container > a, .health-center-container > a, .banner-content > a, .navigation > button {
+.appointment-form button, .latest-news-button-container > a, .health-center-container > a, .banner-content > a, .navigation > button {
   padding: 10px 2.19%;
   border: unset;
   border-radius: 3px;
@@ -100,11 +100,11 @@ figure > img {
   text-transform: capitalize;
   transition: background 1s ease-in-out;
 }
-.latest-news-button-container > a:hover, .health-center-container > a:hover, .banner-content > a:hover, .navigation > button:hover {
+.appointment-form button:hover, .latest-news-button-container > a:hover, .health-center-container > a:hover, .banner-content > a:hover, .navigation > button:hover {
   background: #f73c85;
 }
 
-.latest-news h3, .our-doctors h3, .health-center-container > h3 {
+.make-an-appointment h3, .latest-news h3, .our-doctors h3, .health-center-container > h3 {
   margin-bottom: 60px;
   color: #343531;
   font-size: 30px;
@@ -563,6 +563,53 @@ figure > img {
 
 .latest-news-button-container {
   text-align: center;
+}
+.make-an-appointment > .form-wrapper {
+  padding: 70px 0 65px 0;
+}
+.appointment-form input, .appointment-form textarea, .appointment-form select {
+  padding: 10px;
+  border: 1px solid #dbdfdd;
+  border-radius: 3px;
+  color: #a1aaa7;
+  font-size: 14px;
+}
+.appointment-form select {
+  width: 100%;
+}
+.appointment-form input[type=tel] {
+  width: 100%;
+}
+.appointment-form button {
+  padding: 10px 3.5%;
+}
+.appointment-form button:hover {
+  cursor: pointer;
+}
+
+.name-and-email, .date-and-health {
+  margin-bottom: 10px;
+  display: flex;
+}
+.name-and-email > *, .date-and-health > * {
+  flex-basis: 47.5%;
+  margin-right: 5%;
+  display: inline-block;
+}
+.name-and-email > *:last-child, .date-and-health > *:last-child {
+  margin-right: 0;
+}
+
+.phone-number {
+  margin-bottom: 10px;
+}
+
+.message {
+  margin-bottom: 15px;
+}
+.message textarea {
+  width: 100%;
+  resize: vertical;
 }
 
 /*# sourceMappingURL=styles.css.map */

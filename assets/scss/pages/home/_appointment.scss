@@ -1,0 +1,43 @@
+.make-an-appointment {
+    > .form-wrapper { padding: 70px 0 65px 0; }
+    h3 { @extend %heading; }
+}
+
+.appointment-form {
+    input, textarea, select { 
+        padding: 10px;
+        border: 1px solid returnMap($colors, light-gray-border-color);
+        border-radius: 3px;
+        color: returnMap($colors, gray-color);
+        font-size: 14px;
+    }
+    select { width: 100%; }
+    input[type="tel"] { width: 100%; }
+    button { 
+        @extend %common-button-style;
+        padding: 10px 3.5%;
+        &:hover { cursor: pointer; }
+    }
+}
+
+.name-and-email {
+    margin-bottom: 10px;
+    display: flex;
+    > * { 
+        flex-basis: 47.5%;
+        margin-right: 5%;
+        display: inline-block;
+        &:last-child { margin-right: 0; }
+    }
+}
+
+.date-and-health { @extend .name-and-email; }
+.phone-number { margin-bottom: 10px; }
+
+.message {
+    margin-bottom: 15px;
+    textarea { 
+        width: 100%;
+        resize: vertical;
+    }
+}
