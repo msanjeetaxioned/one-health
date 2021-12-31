@@ -113,6 +113,35 @@ figure > img {
   text-transform: capitalize;
 }
 
+.back-to-top-button {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  right: 20px;
+  bottom: 15px;
+  background: #a1aaa7;
+  color: #343531;
+  font-size: 0;
+  justify-content: center;
+  align-items: center;
+  transition: background 1s ease-in-out, color 1s ease-in-out;
+}
+.back-to-top-button:hover {
+  background: #f73c85;
+  color: #fff;
+  cursor: pointer;
+}
+.back-to-top-button::before {
+  content: "\f077";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 14px;
+}
+
 .header-contact-links {
   border-bottom: 1px solid #dbdfdd;
 }

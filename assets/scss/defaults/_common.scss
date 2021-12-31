@@ -54,3 +54,31 @@ figure {
     text-align: center;
     text-transform: capitalize;
 }
+
+.back-to-top-button {
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    right: 20px;
+    bottom: 15px;
+    background: returnMap($colors, gray-color);
+    color: returnMap($colors, darkest-gray-color);
+    font-size: 0;
+    justify-content: center;
+    align-items: center;
+    transition: background 1s ease-in-out, color 1s ease-in-out;
+    &:hover {
+        background: returnMap($colors, pink-color);
+        color: returnMap($colors, white-color);
+        cursor: pointer;
+    }
+    &::before {
+        content: "\f077";
+        @include fontAwesome(solid);
+        font-size: 14px;
+    }
+}
