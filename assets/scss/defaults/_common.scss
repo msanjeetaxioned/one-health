@@ -39,3 +39,11 @@ figure {
     transition: background 1s ease-in-out;
     &:hover { background: returnMap($colors, pink-color); }
 }
+
+%heading {
+    margin-bottom: 60px;
+    color: returnMap($colors, darkest-gray-color);
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: capitalize;
+}
