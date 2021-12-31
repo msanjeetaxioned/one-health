@@ -239,7 +239,7 @@ figure > img {
   justify-content: flex-end;
 }
 .nav__item {
-  margin-right: 2.74%;
+  margin-right: 5%;
 }
 .nav__item:last-child {
   margin-right: 0;
