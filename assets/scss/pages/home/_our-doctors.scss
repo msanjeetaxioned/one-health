@@ -1,10 +1,6 @@
 .our-doctors {
-    .other-wrapper {
-        padding: 75px 0;
-    }
-    h3 {
-        @extend %heading;
-    }
+    .other-wrapper { padding: 75px 0; }
+    h3 { @extend %heading; }
 }
 
 .doctors-list {
@@ -63,12 +59,8 @@
             @include fontAwesome(solid);
             font-size: 14px;
         }
-        &[title="Previous"]::before {
-            content: "\f060";
-        }
-        &[title="Next"]::before {
-            content: "\f061";
-        }
+        &[title="Previous"]::before { content: "\f060"; }
+        &[title="Next"]::before { content: "\f061"; }
         &.disabled {
             color: returnMap($colors, gray-color);
             &:hover {
