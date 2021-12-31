@@ -1,9 +1,10 @@
 .health-center {
+    background: returnMap($colors, light-gray-background);
     > .wrapper {
         padding-top: 140px;
         display: flex;
         > figure { 
-            padding: 0 10%;
+            padding: 0 8%;
             flex-grow: 1;
         }
         img { margin: 0 auto; }
@@ -11,7 +12,7 @@
 }
 
 .health-center-container {
-    padding-top: 80px;
+    padding: 80px 0 75px 0;
     flex-basis: 47.7%;
     > h3 {
         @extend %heading;
