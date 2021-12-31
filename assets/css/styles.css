@@ -83,6 +83,12 @@ figure > img {
   margin: 0 auto;
 }
 
+.other-wrapper {
+  max-width: 1019px;
+  width: 53.06%;
+  margin: 0 auto;
+}
+
 .health-center-container > a, .banner-content > a, .navigation > button {
   padding: 10px 2.19%;
   border: unset;
@@ -98,11 +104,12 @@ figure > img {
   background: #f73c85;
 }
 
-.health-center-container > h3 {
+.our-doctors h3, .health-center-container > h3 {
   margin-bottom: 60px;
   color: #343531;
   font-size: 30px;
   line-height: 40px;
+  text-align: center;
   text-transform: capitalize;
 }
 
@@ -389,6 +396,7 @@ figure > img {
 }
 .health-center-container > h3 {
   margin-bottom: 10px;
+  text-align: left;
 }
 .health-center-container > p {
   margin-bottom: 20px;
@@ -398,6 +406,92 @@ figure > img {
 }
 .health-center-container > a {
   padding: 12px 6%;
+}
+
+.our-doctors .other-wrapper {
+  padding: 75px 0;
+}
+.doctors-list {
+  padding-bottom: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.doctors-list__item {
+  margin-right: 13%;
+  display: inline-block;
+  flex: 1;
+  flex-basis: 24.67%;
+  box-shadow: 0 0 10px #9d94a0;
+}
+.doctors-list__item:last-child {
+  margin-right: 0;
+}
+.doctors-list__item img {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.doctors-list__item figure {
+  margin-bottom: 20px;
+}
+.doctors-list__item h4 {
+  padding: 0 7.61%;
+  margin-bottom: 10px;
+  color: #9d94a0;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.doctors-list__item span {
+  padding: 0 7.61% 15px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  display: block;
+  color: #a1aaa7;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.doctors-list-control-buttons-container {
+  text-align: center;
+}
+
+.doctors-list-control-buttons {
+  padding: 10px 15px;
+  border-radius: 25px;
+  display: inline-flex;
+  background: #3ed9a5;
+}
+.doctors-list-control-buttons__item {
+  margin-right: 15px;
+}
+.doctors-list-control-buttons__item:last-child {
+  margin-right: 0;
+}
+.doctors-list-control-buttons__button {
+  color: #fff;
+  font-size: 0;
+  transition: color 1s ease-in-out;
+}
+.doctors-list-control-buttons__button:hover {
+  cursor: pointer;
+}
+.doctors-list-control-buttons__button::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 14px;
+}
+.doctors-list-control-buttons__button[title=Previous]::before {
+  content: "\f060";
+}
+.doctors-list-control-buttons__button[title=Next]::before {
+  content: "\f061";
+}
+.doctors-list-control-buttons__button.disabled {
+  color: #a1aaa7;
+}
+.doctors-list-control-buttons__button.disabled:hover {
+  color: #dbdfdd;
+  cursor: not-allowed;
 }
 
 /*# sourceMappingURL=styles.css.map */

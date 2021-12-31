@@ -27,6 +27,12 @@ figure {
     margin: 0 auto;
 }
 
+.other-wrapper {
+    max-width: 1019px;
+    width: 53.06%;
+    margin: 0 auto;
+}
+
 %common-button-style {
     padding: 10px 2.19%;
     border: unset;
@@ -45,5 +51,6 @@ figure {
     color: returnMap($colors, darkest-gray-color);
     font-size: 30px;
     line-height: 40px;
+    text-align: center;
     text-transform: capitalize;
 }

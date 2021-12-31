@@ -1,0 +1,80 @@
+.our-doctors {
+    .other-wrapper {
+        padding: 75px 0;
+    }
+    h3 {
+        @extend %heading;
+    }
+}
+
+.doctors-list {
+    padding-bottom: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    &__item {
+        margin-right: 13%;
+        display: inline-block;
+        flex: 1;
+        flex-basis: 24.67%;
+        box-shadow: 0 0 10px returnMap($colors, darker-gray-color);
+        &:last-child { margin-right: 0; }
+        img {
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+        figure { margin-bottom: 20px; }
+        h4 {
+            padding: 0 7.61%;
+            margin-bottom: 10px;
+            color: returnMap($colors, darker-gray-color);
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        span {
+            padding: 0 7.61% 15px;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            display: block;
+            color: returnMap($colors, gray-color);
+            font-size: 12px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.doctors-list-control-buttons-container { text-align: center; }
+
+.doctors-list-control-buttons {
+    padding: 10px 15px;
+    border-radius: 25px;
+    display: inline-flex;
+    background: returnMap($colors, green-color);
+    &__item {
+        margin-right: 15px;
+        &:last-child { margin-right: 0; }
+    }
+    &__button {
+        color: returnMap($colors, white-color);
+        font-size: 0;
+        transition: color 1s ease-in-out;
+        &:hover { cursor: pointer; }
+        &::before {
+            @include fontAwesome(solid);
+            font-size: 14px;
+        }
+        &[title="Previous"]::before {
+            content: "\f060";
+        }
+        &[title="Next"]::before {
+            content: "\f061";
+        }
+        &.disabled {
+            color: returnMap($colors, gray-color);
+            &:hover {
+                color: returnMap($colors, light-gray-border-color);
+                cursor: not-allowed;
+            }
+        }
+    }
+}
