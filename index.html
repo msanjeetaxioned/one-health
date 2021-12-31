@@ -84,7 +84,7 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#FIXME" title="Home">home</a>
+              <a class="nav__link selected" href="#FIXME" title="Home">home</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#FIXME" title="About Us">about us</a>
@@ -245,7 +245,30 @@
       <a href="#FIXME" title="Read More">read more</a>
     </section>
     <section class="make-an-appointment">
-      
+      <h3>make an appointment</h3>
+      <form action="#FIXME" method="post">
+        <div class="name-and-email">
+          <input type="text" placeholder="Full Name">
+          <input type="email" placeholder="Email address..">
+        </div>
+        <div class="date-and-health">
+          <input type="date" placeholder="dd/mm/yyyy">
+          <div class="appointment-reason-container">
+            <select name="appointment-reason">
+              <option value="general health">General Health</option>
+              <option value="option 2">Option 2</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="phone-number">
+          <input type="tel" placeholder="Number..">
+        </div>
+        <div class="message">
+          <textarea placeholder="Enter Message.." rows="6"></textarea>
+        </div>
+        <button type="submit">submit request</button>
+      </form>
     </section>
   </main>
   <!--main section end-->
