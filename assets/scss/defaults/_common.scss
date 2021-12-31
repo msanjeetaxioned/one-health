@@ -31,6 +31,7 @@ figure {
     padding: 10px 2.19%;
     border: unset;
     border-radius: 3px;
+    display: inline-block;
     background: returnMap($colors, green-color);;
     color: returnMap($colors, white-color);
     font-size: 12px;
