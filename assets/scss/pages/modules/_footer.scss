@@ -1,0 +1,92 @@
+footer {
+    background: returnMap($colors, footer-background);
+    > .wrapper { padding: 80px 0 30px 0; }
+}
+
+.footer-links-container {
+    padding-bottom: 25px;
+    border-bottom: 1px solid returnMap($colors, light-gray-border-color);
+    display: flex;
+    > * { 
+        flex: 1;
+        h4 {
+            margin-bottom: 20px;
+            color: returnMap($colors, white-color);
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.company-links {
+    &__item { @extend %footer-links; }
+}
+
+.more-links {
+    &__item { @extend %footer-links; }
+}
+
+.our-partner-links {
+    &__item { @extend %footer-links; }
+}
+
+.contact-info {
+    address {
+        margin-bottom: 10px;
+        color: returnMap($colors, gray-color);
+        font-size: 14px;
+    }
+    > a {
+        margin-bottom: 10px;
+        display: inline-block;
+        color: returnMap($colors, gray-color);
+        font-size: 14px;
+        transition: color 1s ease-in-out;
+        &:hover { color: returnMap($colors, green-color); }
+        &[title="Email Support"] { margin-bottom: 30px; }
+    }
+}
+
+.footer-social-links {
+    display: flex;
+    &__item {
+        margin-right: 5px;
+        &:last-child { margin-right: 0; }
+    }
+    &__link {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        background: returnMap($colors, footer-social-icons-background);
+        color: returnMap($colors, white-color);
+        font-size: 0;
+        justify-content: center;
+        align-items: center;
+        transition: background 1s ease-in-out;
+        &:hover { background: returnMap($colors, green-color); }
+        &::before {
+            @include fontAwesome(brands);
+            font-size: 14px;
+        }
+        &[title="Facebook"]::before { content: "\f39e"; }
+        &[title="Twitter"]::before { content: "\f099"; }
+        &[title="Google Plus"]::before { content: "\f0d5"; }
+        &[title="Instagram"]::before { content: "\f16d"; }
+        &[title="LinkedIn"]::before { content: "\f08c"; }
+    }
+}
+
+.copyright-info {
+    padding-top: 15px;
+    span {
+        color: returnMap($colors, white-color);
+        font-size: 12px;
+        > a {
+            color: returnMap($colors, green-color);
+            transition: color 1s ease-in-out;
+            &:hover { color: returnMap($colors, pink-color); }
+        }
+    }
+}

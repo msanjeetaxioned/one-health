@@ -142,6 +142,22 @@ figure > img {
   font-size: 14px;
 }
 
+.our-partner-links__item, .more-links__item, .company-links__item {
+  margin-bottom: 10px;
+}
+.our-partner-links__item:last-child, .more-links__item:last-child, .company-links__item:last-child {
+  margin-bottom: 0;
+}
+.our-partner-links__item a, .more-links__item a, .company-links__item a {
+  color: #a1aaa7;
+  font-size: 14px;
+  text-transform: capitalize;
+  transition: color 1s ease-in-out;
+}
+.our-partner-links__item a:hover, .more-links__item a:hover, .company-links__item a:hover {
+  color: #3ed9a5;
+}
+
 .header-contact-links {
   border-bottom: 1px solid #dbdfdd;
 }
@@ -300,6 +316,108 @@ figure > img {
 }
 .nav__link.selected {
   color: #3ed9a5;
+}
+
+footer {
+  background: #2d3b38;
+}
+footer > .wrapper {
+  padding: 80px 0 30px 0;
+}
+
+.footer-links-container {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #dbdfdd;
+  display: flex;
+}
+.footer-links-container > * {
+  flex: 1;
+}
+.footer-links-container > * h4 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.contact-info address {
+  margin-bottom: 10px;
+  color: #a1aaa7;
+  font-size: 14px;
+}
+.contact-info > a {
+  margin-bottom: 10px;
+  display: inline-block;
+  color: #a1aaa7;
+  font-size: 14px;
+  transition: color 1s ease-in-out;
+}
+.contact-info > a:hover {
+  color: #3ed9a5;
+}
+.contact-info > a[title="Email Support"] {
+  margin-bottom: 30px;
+}
+
+.footer-social-links {
+  display: flex;
+}
+.footer-social-links__item {
+  margin-right: 5px;
+}
+.footer-social-links__item:last-child {
+  margin-right: 0;
+}
+.footer-social-links__link {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  background: #26212f;
+  color: #fff;
+  font-size: 0;
+  justify-content: center;
+  align-items: center;
+  transition: background 1s ease-in-out;
+}
+.footer-social-links__link:hover {
+  background: #3ed9a5;
+}
+.footer-social-links__link::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-size: 14px;
+}
+.footer-social-links__link[title=Facebook]::before {
+  content: "\f39e";
+}
+.footer-social-links__link[title=Twitter]::before {
+  content: "\f099";
+}
+.footer-social-links__link[title="Google Plus"]::before {
+  content: "\f0d5";
+}
+.footer-social-links__link[title=Instagram]::before {
+  content: "\f16d";
+}
+.footer-social-links__link[title=LinkedIn]::before {
+  content: "\f08c";
+}
+
+.copyright-info {
+  padding-top: 15px;
+}
+.copyright-info span {
+  color: #fff;
+  font-size: 12px;
+}
+.copyright-info span > a {
+  color: #3ed9a5;
+  transition: color 1s ease-in-out;
+}
+.copyright-info span > a:hover {
+  color: #f73c85;
 }
 
 .banner {
