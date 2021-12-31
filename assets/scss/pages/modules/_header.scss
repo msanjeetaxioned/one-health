@@ -64,3 +64,76 @@
         &[title="Instagram"]::before { content: "\f16d"; }
     }
 }
+
+.navigation {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    > * {
+        margin-right: 2.74%;
+        &:last-child { margin-right: 0; }
+    }
+    > button {
+        @extend %common-button-style;
+        &:hover { cursor: pointer; }
+    }
+}
+
+.logo {
+    > a {
+        color: returnMap($colors, green-color);
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: capitalize;
+        > span { color: returnMap($colors, darkest-gray-color); }
+    }
+}
+
+.search-form {
+    > div {
+        display: flex;
+        > * {
+            padding: 10px;
+            display: inline-block;
+            font-size: 14px;
+        }
+        > span {
+            border: 1px solid returnMap($colors, light-gray-border-color);
+            border-right: none;
+            font-size: 0;
+            &::before {
+                content: "\f002";
+                color: returnMap($colors, green-color);
+                font-size: 14px;
+                @include fontAwesome(solid);
+            }
+        }
+        > input {
+            border: 1px solid returnMap($colors, light-gray-border-color);
+            color: returnMap($colors, darker-gray-color);
+            &:focus {
+                border: 1px solid returnMap($colors, green-color);
+            }
+        }
+    }
+}
+
+.nav {
+    flex-grow: 1;
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__item {
+        margin-right: 2.74%;
+        &:last-child { margin-right: 0; }
+    }
+    &__link {
+        color: returnMap($colors, gray-color);
+        font-size: 14px;
+        text-transform: capitalize;
+        transition: color 1s ease-in-out;
+        &:hover { color: returnMap($colors, green-color); }
+        &.selected { color: returnMap($colors, green-color); }
+    }
+}

@@ -83,6 +83,20 @@ figure > img {
   margin: 0 auto;
 }
 
+.navigation > button {
+  padding: 10px 2.19%;
+  border: unset;
+  border-radius: 3px;
+  background: #3ed9a5;
+  color: #fff;
+  font-size: 12px;
+  text-transform: capitalize;
+  transition: background 1s ease-in-out;
+}
+.navigation > button:hover {
+  background: #f73c85;
+}
+
 .header-contact-links {
   border-bottom: 1px solid #dbdfdd;
 }
@@ -162,6 +176,85 @@ figure > img {
 }
 .header-social-icons__link[title=Instagram]::before {
   content: "\f16d";
+}
+
+.navigation {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.navigation > * {
+  margin-right: 2.74%;
+}
+.navigation > *:last-child {
+  margin-right: 0;
+}
+.navigation > button:hover {
+  cursor: pointer;
+}
+
+.logo > a {
+  color: #3ed9a5;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.logo > a > span {
+  color: #343531;
+}
+
+.search-form > div {
+  display: flex;
+}
+.search-form > div > * {
+  padding: 10px;
+  display: inline-block;
+  font-size: 14px;
+}
+.search-form > div > span {
+  border: 1px solid #dbdfdd;
+  border-right: none;
+  font-size: 0;
+}
+.search-form > div > span::before {
+  content: "\f002";
+  color: #3ed9a5;
+  font-size: 14px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.search-form > div > input {
+  border: 1px solid #dbdfdd;
+  color: #9d94a0;
+}
+.search-form > div > input:focus {
+  border: 1px solid #3ed9a5;
+}
+
+.nav {
+  flex-grow: 1;
+}
+.nav__list {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav__item {
+  margin-right: 2.74%;
+}
+.nav__item:last-child {
+  margin-right: 0;
+}
+.nav__link {
+  color: #a1aaa7;
+  font-size: 14px;
+  text-transform: capitalize;
+  transition: color 1s ease-in-out;
+}
+.nav__link:hover {
+  color: #3ed9a5;
+}
+.nav__link.selected {
+  color: #3ed9a5;
 }
 
 /*# sourceMappingURL=styles.css.map */

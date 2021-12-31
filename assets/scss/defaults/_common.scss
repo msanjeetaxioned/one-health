@@ -26,3 +26,15 @@ figure {
     width: 37.86%;
     margin: 0 auto;
 }
+
+%common-button-style {
+    padding: 10px 2.19%;
+    border: unset;
+    border-radius: 3px;
+    background: returnMap($colors, green-color);;
+    color: returnMap($colors, white-color);
+    font-size: 12px;
+    text-transform: capitalize;
+    transition: background 1s ease-in-out;
+    &:hover { background: returnMap($colors, pink-color); }
+}
